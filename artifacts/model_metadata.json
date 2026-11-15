@@ -1,0 +1,72 @@
+{
+  "project": "Telecom Customer Churn Prediction",
+  "model_name": "Logistic Regression",
+  "decision_threshold": 0.5397463364144385,
+  "target_mapping": {
+    "No": 0,
+    "Yes": 1
+  },
+  "numeric_features": [
+    "SeniorCitizen",
+    "tenure",
+    "MonthlyCharges",
+    "TotalCharges"
+  ],
+  "categorical_features": [
+    "gender",
+    "Partner",
+    "Dependents",
+    "PhoneService",
+    "MultipleLines",
+    "InternetService",
+    "OnlineSecurity",
+    "OnlineBackup",
+    "DeviceProtection",
+    "TechSupport",
+    "StreamingTV",
+    "StreamingMovies",
+    "Contract",
+    "PaperlessBilling",
+    "PaymentMethod"
+  ],
+  "feature_columns": [
+    "gender",
+    "SeniorCitizen",
+    "Partner",
+    "Dependents",
+    "tenure",
+    "PhoneService",
+    "MultipleLines",
+    "InternetService",
+    "OnlineSecurity",
+    "OnlineBackup",
+    "DeviceProtection",
+    "TechSupport",
+    "StreamingTV",
+    "StreamingMovies",
+    "Contract",
+    "PaperlessBilling",
+    "PaymentMethod",
+    "MonthlyCharges",
+    "TotalCharges"
+  ],
+  "training_timestamp_utc": "2026-11-15T10:47:45.276090+00:00",
+  "random_state": 42,
+  "library_versions": {
+    "python": "3.13.18",
+    "numpy": "2.4.6",
+    "pandas": "2.2.3",
+    "scikit_learn": "1.6.1"
+  },
+  "dataset_sha256": "a0ea74c48c1063be89a73ce3fb868593604c0129f2bf581934f04983d728b3b5",
+  "test_metrics": {
+    "selected_model": "Logistic Regression",
+    "threshold": 0.5397463364144385,
+    "accuracy": 0.7625354777672658,
+    "precision": 0.5384615384615384,
+    "recall": 0.7473309608540926,
+    "f1": 0.6259314456035767,
+    "roc_auc": 0.8446270682760392,
+    "average_precision_PR_AUC": 0.6586153703128842
+  }
+}
