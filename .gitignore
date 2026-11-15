@@ -218,3 +218,8 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Local development and generated files
+.DS_Store
+*.log
+*.tmp
