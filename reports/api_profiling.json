@@ -1,0 +1,15 @@
+{
+  "benchmark_environment": "Google Colab; FastAPI TestClient in-process",
+  "single_endpoint_requests": 200,
+  "single_request_latency_p50_ms": 24.927714500023512,
+  "single_request_latency_p95_ms": 69.2119876000035,
+  "single_request_latency_p99_ms": 84.67067576001398,
+  "single_request_latency_mean_ms": 31.70516669000307,
+  "single_request_throughput_requests_per_second": 31.540600614956208,
+  "batch_size_records": 32,
+  "batch_endpoint_requests": 50,
+  "batch_request_latency_p50_ms": 25.087672000012162,
+  "batch_request_latency_p95_ms": 47.99086470000304,
+  "batch_request_latency_p99_ms": 57.98832277997517,
+  "batch_records_per_second": 1115.8050044418312
+}

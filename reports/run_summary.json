@@ -1,0 +1,101 @@
+{
+  "dataset_shape_raw": [
+    7043,
+    21
+  ],
+  "dataset_shape_modeling": [
+    7043,
+    21
+  ],
+  "blank_total_charges_before_conversion": 11,
+  "duplicate_rows_removed": 0,
+  "split": [
+    {
+      "partition": "train",
+      "rows": 4930,
+      "churn_rate": 0.2653144016227181
+    },
+    {
+      "partition": "validation",
+      "rows": 1056,
+      "churn_rate": 0.26515151515151514
+    },
+    {
+      "partition": "test",
+      "rows": 1057,
+      "churn_rate": 0.26584673604541154
+    }
+  ],
+  "validation_results": [
+    {
+      "model": "Logistic Regression",
+      "threshold": 0.5,
+      "accuracy": 0.7395833333333334,
+      "precision": 0.5055432372505543,
+      "recall": 0.8142857142857143,
+      "f1": 0.6238030095759234,
+      "roc_auc": 0.8446773748159058,
+      "average_precision_PR_AUC": 0.630758973014558,
+      "training_seconds": 0.5544278039999995
+    },
+    {
+      "model": "Random Forest",
+      "threshold": 0.5,
+      "accuracy": 0.7774621212121212,
+      "precision": 0.5700934579439252,
+      "recall": 0.6535714285714286,
+      "f1": 0.6089850249584027,
+      "roc_auc": 0.8306954160530191,
+      "average_precision_PR_AUC": 0.6085393171849218,
+      "training_seconds": 6.504314687999994
+    },
+    {
+      "model": "Dummy baseline",
+      "threshold": 0.5,
+      "accuracy": 0.7348484848484849,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "roc_auc": 0.5,
+      "average_precision_PR_AUC": 0.26515151515151514,
+      "training_seconds": 0.16672130599999946
+    }
+  ],
+  "test_metrics": {
+    "selected_model": "Logistic Regression",
+    "threshold": 0.5397463364144385,
+    "accuracy": 0.7625354777672658,
+    "precision": 0.5384615384615384,
+    "recall": 0.7473309608540926,
+    "f1": 0.6259314456035767,
+    "roc_auc": 0.8446270682760392,
+    "average_precision_PR_AUC": 0.6586153703128842
+  },
+  "api_profiling": {
+    "benchmark_environment": "Google Colab; FastAPI TestClient in-process",
+    "single_endpoint_requests": 200,
+    "single_request_latency_p50_ms": 24.927714500023512,
+    "single_request_latency_p95_ms": 69.2119876000035,
+    "single_request_latency_p99_ms": 84.67067576001398,
+    "single_request_latency_mean_ms": 31.70516669000307,
+    "single_request_throughput_requests_per_second": 31.540600614956208,
+    "batch_size_records": 32,
+    "batch_endpoint_requests": 50,
+    "batch_request_latency_p50_ms": 25.087672000012162,
+    "batch_request_latency_p95_ms": 47.99086470000304,
+    "batch_request_latency_p99_ms": 57.98832277997517,
+    "batch_records_per_second": 1115.8050044418312
+  },
+  "package_versions": {
+    "numpy": "2.4.6",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.6.1",
+    "joblib": "1.6.0",
+    "fastapi": "0.141.1",
+    "uvicorn": "0.54.0",
+    "pydantic": "2.14.2",
+    "httpx": "0.28.1"
+  },
+  "artifact": "/content/telecom-churn-production-ml/artifacts/churn_pipeline.joblib",
+  "metadata": "/content/telecom-churn-production-ml/artifacts/model_metadata.json"
+}
